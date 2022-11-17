@@ -13,38 +13,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="./index.html" class="logo link" lang="en" title="Cтудія">
-          <span class="logo-web">Web</span><span>Studio</span>
+    <header class="header" id="header">
+      <div class="container header__container">
+        <a href="./index.html" class="header__logo link" lang="en" title="Cтудія">
+          <span class="header__logo--accent">Web</span><span>Studio</span>
         </a>
-        <nav>
-          <ul class="sitenav list">
-            <li class="item">
-              <a href="./index.html" class="current link">Студія</a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link navigation__link--current link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link link">Портфоліо</a>
             </li>
-            <li class="item"><a href="#cont" class="link">Контакти</a></li>
+            <li class="navigation__item">
+              <a href="#cont" class="navigation__link link">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="header-cont link">
-              <svg class="icon-envelope" width="16" height="12">
+        <ul class="header-contacts__list list">
+          <li class="header-contacts__item">
+            <a href="mailto:info@devstudio.com" class="header-contacts__link link">
+              <svg class="header-contacts__icon-envelope" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="header-cont link">
-              <svg class="icon-smartphone" width="10" height="16">
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="header-contacts__link link">
+              <svg class="header-contacts__icon-smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -55,58 +56,58 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero-post">
+      <section class="hero" id="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-button btn" type="button" data-modal-open="openModalBtn">
+          <button class="hero__button btn" type="button" data-modal-open="openModalBtn">
             Замовити послугу
           </button>
           <div class="overlay is-hidden" data-modal="modal"> 
-            <div class="modal-window" data-modal="data-modal">
-              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-              <a class="close-btn" href="#" data-modal-close="closeModalBtn">
-                <svg class="close-icon" width="18" height="18">
+            <div class="modal" data-modal="data-modal">
+              <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+              <a class="modal__button" href="#" data-modal-close="closeModalBtn">
+                <svg class="button__close-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </a>
-              <form class="feedback" action="./recall.html">
-                <div class="feedback-group" role="group">
-                  <label class="feedback-label" for="name">Ім'я
-                    <input class="input" type="text" id="name">
-                    <svg class="feedback-icon" width="18" height="18">
+              <form class="modal__form" action="./recall.html">
+                <div class="form-group" role="group">
+                  <label class="form__label" for="name">Ім'я
+                    <input class="form__input" type="text" id="name">
+                    <svg class="form__icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-person"></use>
                     </svg> 
                   </label>
-                  <label class="feedback-label" for="phone">Телефон
-                    <input class="input" type="text" id="phone">
-                    <svg class="feedback-icon" width="18" height="18">
+                  <label class="form__label" for="phone">Телефон
+                    <input class="form__input" type="text" id="phone">
+                    <svg class="form__icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                   </label>
-                  <label class="feedback-label" for="mail">Пошта
-                    <input class="input" type="text" id="mail">
-                    <svg class="feedback-icon" width="18" height="18">
+                  <label class="form__label" for="mail">Пошта
+                    <input class="form__input" type="text" id="mail">
+                    <svg class="form__icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                   </label>
-                  <label class="feedback-label" for="comment">Коментар
-                    <textarea class="comment-input input" rows="7" placeholder="Введіть текст" id="comment"></textarea>
+                  <label class="form__label" for="comment">Коментар
+                    <textarea class="comment-input form__input" rows="7" placeholder="Введіть текст" id="comment"></textarea>
                   </label>
                 </div>
                 <div class="privacy-wrap">
-                  <label class="feedback-checkbox">
-                    <input class="feedback-checkbox-input" type="checkbox" name="privacy" value="privacy" />
+                  <label class="privacy-checkbox">
+                    <input class="privacy__input" type="checkbox" name="privacy" value="privacy" />
                     Погоджуюся з розсилкою та приймаю 
-                    <svg class="check-icon" width="16" height="15">
+                    <svg class="privacy__check-icon" width="16" height="15">
                       <use href="./images/icons.svg#icon-checkbox"></use>
                     </svg>
-                    <svg class="uncheck-icon"  width="16" height="15">
+                    <svg class="privacy__uncheck-icon"  width="16" height="15">
                       <use href="./images/icons.svg#icon-uncheck"></use>
                     </svg>
-                    <a class="feedback-link link" href="#">Умови договору</a>
+                    <a class="privacy__link link" href="#">Умови договору</a>
                   </label>
                 </div>
                 <button class="submit-btn btn" type="submit">Відправити</button>
@@ -118,7 +119,7 @@
       </section>
       <section class="section">
         <div class="container specialty-wrap">
-          <h2 class="section-title hide">Особливості</h2>
+          <h2 class="section-title visually-hidden">Особливості</h2>
           <ul class="specialty-list list">
             <li class="specialty-item item">
               <div class="icon-wrapper">
@@ -487,6 +488,11 @@
         </div>
       </div>
     </footer>
+    <a class="scroll-to-top" href="#header">
+      <svg class="arrow-top" width="20" height="20">
+        <use href="./images/icons.svg#arrow-top"></use>
+      </svg>
+    </a>
     <script src="./js/modal.js"></script>
   </body>
 </html>
