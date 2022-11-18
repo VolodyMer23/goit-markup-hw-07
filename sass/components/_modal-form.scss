@@ -134,6 +134,7 @@
 
 .comment-input {
   padding-left: 11px;
+  resize: none;
 }
 
 .form-group {
@@ -164,10 +165,12 @@
   margin-right: auto;
   margin-left: auto;
   gap: 3px;
+  cursor: pointer;
 }
 
 .privacy__input {
   display: block;
+  resize: none;
   opacity: 0;
   height: 0;
   width: 0;
