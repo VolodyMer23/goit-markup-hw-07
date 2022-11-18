@@ -6,3 +6,21 @@
       transform: scale(105%);
     }
 }
+
+@keyframes unblur {
+  from {
+    filter: blur(150px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+@keyframes opacity {
+  from {
+    transform: opacity(100%);
+  }
+  to {
+    opacity: opacity(0);
+  }
+}
