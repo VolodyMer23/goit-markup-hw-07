@@ -4,7 +4,7 @@
   ============================
 */
 
-/* =====  Шапка сайту  ===== */
+/* =====  HEADER  ===== */
 .header {
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +22,7 @@
   z-index: 4;
 }
 
-/* =====  Логотип  ===== */
+/* =====  LOGO  ===== */
 
 .header__logo {
   color: #000000;
@@ -42,6 +42,8 @@
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
+
+/* =====  NAVIGATION  ===== */
 
 .navigation__list {
   color: var(--primary-text-color);
@@ -85,6 +87,8 @@
     left: 0;
   }
 }
+
+/* =====  CONTACTS  ===== */
 
 .header-contacts__list {
   display: flex;

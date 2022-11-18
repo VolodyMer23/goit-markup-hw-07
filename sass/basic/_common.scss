@@ -20,7 +20,10 @@
     cursor: pointer;
   }
   
-  .section-title {
+  .section-title,
+  .services__title,
+  .team__title,
+  .clients__title {
     color: var(--primary-text-color);
     font-size: 36px;
     line-height: 1.17;
@@ -31,9 +34,10 @@
   
   .list {
     list-style: none;
+    
   }
   
   .link {
-    color: var(--primary-text-color);
     text-decoration: none;
+    color: currentColor;
   }
