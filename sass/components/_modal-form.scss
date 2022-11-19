@@ -53,6 +53,12 @@
   opacity: 0;
   pointer-events: revert;
   transform: scale(1);
+  transition: opacity 1s;
+  // transition: transform 1000ms linear;
+  // transition: visibility 1000ms linear;
+  animation-name: scaler;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
 .overlay {
@@ -63,7 +69,8 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+  animation-name: scaler;
+  transition: all 1s;
 }
 
 .modal__title {
